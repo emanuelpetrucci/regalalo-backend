@@ -1,0 +1,118 @@
+# Blueprint Render — API Regálalo (dev + prod)
+#
+# sync: false solo en envVars del servicio (no en envVarGroups — Render lo ignora ahí).
+# Tras crear el Blueprint: rellenar secretos en el asistente o en el panel de cada servicio.
+
+envVarGroups:
+  - name: regalalo-backend-dev-common
+    envVars:
+      - key: NODE_ENV
+        value: development
+      - key: APP_ENV
+        value: dev
+      - key: ANALYTICS_PERSISTENCE
+        value: postgres
+      - key: STORAGE_DRIVER
+        value: supabase
+      - key: MAIL_PROVIDER
+        value: console
+      - key: LOG_LEVEL
+        value: debug
+      - key: CORS_ALLOW_VERCEL_PREVIEWS
+        value: "true"
+      - key: RECAPTCHA_MIN_SCORE
+        value: "0.3"
+      - key: NOMINATIM_BASE_URL
+        value: https://nominatim.openstreetmap.org
+
+  - name: regalalo-backend-prod-common
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: APP_ENV
+        value: prod
+      - key: ANALYTICS_PERSISTENCE
+        value: postgres
+      - key: STORAGE_DRIVER
+        value: supabase
+      - key: MAIL_PROVIDER
+        value: resend
+      - key: LOG_LEVEL
+        value: info
+      - key: CORS_ALLOW_VERCEL_PREVIEWS
+        value: "false"
+      - key: NOMINATIM_BASE_URL
+        value: https://nominatim.openstreetmap.org
+
+services:
+  - type: web
+    name: regalalo-backend-dev
+    runtime: node
+    region: frankfurt
+    plan: free
+    branch: develop
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start:dev
+    healthCheckPath: /api/health
+    envVars:
+      - fromGroup: regalalo-backend-dev-common
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        sync: false
+      - key: RECAPTCHA_SECRET_KEY
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: RESEND_FROM
+        sync: false
+      - key: CRON_SECRET
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_STORAGE_BUCKET
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+      - key: APP_PUBLIC_URL
+        sync: false
+
+  - type: web
+    name: regalalo-backend
+    runtime: node
+    region: frankfurt
+    plan: starter
+    branch: master
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start:prod
+    healthCheckPath: /api/health
+    envVars:
+      - fromGroup: regalalo-backend-prod-common
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        sync: false
+      - key: RECAPTCHA_SECRET_KEY
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: RESEND_FROM
+        sync: false
+      - key: CRON_SECRET
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_STORAGE_BUCKET
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+      - key: APP_PUBLIC_URL
+        sync: false

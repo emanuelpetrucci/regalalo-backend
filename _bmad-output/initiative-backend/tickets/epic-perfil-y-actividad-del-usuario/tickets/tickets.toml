@@ -1,0 +1,66 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Ver perfil privado del usuario autenticado"
+description = "quiero poder consultar mi propio perfil completo, para conocer mi reputación, estadísticas y datos de cuenta. **Criterios de Aceptación:** **Dado** que envío `GET /users/me` con autenticación válida **Cuando** el servidor procesa la petición"
+verify = "Ver perfil privado del usuario autenticado"
+covers = ["R28", "R29", "R30", "R31", "R32", "R33"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "5-1-ver-perfil-privado-del-usuario-autenticado"
+[[entry]]
+id = 2
+type = "story"
+title = "Ver historial de reputación"
+description = "quiero ver el historial de eventos que afectaron mi reputación, para entender cómo evolucionó mi score y qué acciones lo modificaron. **Criterios de Aceptación:** **Dado** que envío `GET /users/me/reputation-history` con autenticación válida **Cuando** el servidor procesa la petición"
+verify = "Ver historial de reputación"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "5-2-ver-historial-de-reputacion"
+[[entry]]
+id = 3
+type = "story"
+title = "Ver sesiones de entrega propias"
+description = "quiero poder ver mis sesiones de entrega como donante o receptor con filtros por rol y estado, para hacer seguimiento de mis entregas activas e históricas. **Criterios de Aceptación:** **Dado** que envío `GET /users/me/delivery-sessions` con autenticación válida **Cuando** el servidor procesa la petición"
+verify = "Ver sesiones de entrega propias"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "5-3-ver-sesiones-de-entrega-propias"
+[[entry]]
+id = 4
+type = "story"
+title = "Ver objetos publicados propios"
+description = "quiero ver todos los objetos que publiqué con filtro por estado, para gestionar mi actividad como donante. **Criterios de Aceptación:** **Dado** que envío `GET /users/me/items` con autenticación válida **Cuando** el servidor procesa la petición"
+verify = "Ver objetos publicados propios"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "5-4-ver-objetos-publicados-propios"
+[[entry]]
+id = 5
+type = "story"
+title = "Ver solicitudes realizadas propias"
+description = "quiero ver todas las solicitudes que realicé con filtro por estado, para hacer seguimiento de los objetos que pedí. **Criterios de Aceptación:** **Dado** que envío `GET /users/me/requests` con autenticación válida **Cuando** el servidor procesa la petición"
+verify = "Ver solicitudes realizadas propias"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "5-5-ver-solicitudes-realizadas-propias"
+[[entry]]
+id = 6
+type = "story"
+title = "Ver perfil público de un usuario"
+description = "quiero poder ver el perfil público de otro usuario, para conocer su reputación y actividad antes de decidir si solicitar un objeto suyo o aceptarlo como receptor. **Criterios de Aceptación:** **Dado** que envío `GET /users/:id` con un UUID válido y el usuario existe **Cuando** el servidor procesa la petición"
+verify = "Ver perfil público de un usuario"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "5-6-ver-perfil-publico-de-un-usuario"

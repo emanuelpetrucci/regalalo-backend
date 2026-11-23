@@ -1,0 +1,66 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Seleccionar receptor para un objeto"
+description = "quiero seleccionar un receptor de la lista de candidatos proporcionando mi canal de contacto, para iniciar el proceso de entrega con esa persona. **Criterios de Aceptación:** **Dado** que envío `POST /items/:id/requests/:requestId/select` con `{ \"contactChannel\": \"string\" }` siendo el donante, el objeto en estado `active` y la request en estado `pending` **Cuando** el servidor procesa la petición"
+verify = "Seleccionar receptor para un objeto"
+covers = ["R19", "R20", "R21", "R22", "R23", "R26"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "4-1-seleccionar-receptor-para-un-objeto"
+[[entry]]
+id = 2
+type = "story"
+title = "Ver detalle de sesión de entrega"
+description = "quiero poder consultar el detalle de una sesión de entrega en la que participo, para conocer su estado, el deadline y el canal de contacto si corresponde. **Criterios de Aceptación:** **Dado** que envío `GET /delivery-sessions/:id` siendo el donante o el receptor de la sesión **Cuando** el servidor procesa la petición"
+verify = "Ver detalle de sesión de entrega"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "4-2-ver-detalle-de-sesion-de-entrega"
+[[entry]]
+id = 3
+type = "story"
+title = "Confirmar entrega completada"
+description = "quiero poder confirmar que la entrega se realizó exitosamente, para cerrar la sesión, actualizar la reputación de ambas partes y registrar el evento. **Criterios de Aceptación:** **Dado** que envío `POST /delivery-sessions/:id/confirm` siendo el donante y la sesión en estado `active` con `donor_confirmed = FALSE` **Cuando** el servidor procesa la petición en transacción atómica"
+verify = "Confirmar entrega completada"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "4-3-confirmar-entrega-completada"
+[[entry]]
+id = 4
+type = "story"
+title = "Cancelar sesión de entrega y declarar no-show"
+description = "quiero poder cancelar una sesión de entrega con la opción de declarar que el receptor no se presentó, para cerrar la sesión correctamente y penalizar al receptor si corresponde. **Criterios de Aceptación:** **Dado** que envío `POST /delivery-sessions/:id/cancel` con `{ \"noShow\": false }` siendo el donante y la sesión en estado `active` **Cuando** el servidor procesa la petición en transacción atóm"
+verify = "Cancelar sesión de entrega y declarar no-show"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "4-4-cancelar-sesion-de-entrega-y-declarar-no-show"
+[[entry]]
+id = 5
+type = "story"
+title = "Cancelar objeto con sesión activa"
+description = "quiero que al cancelar mi objeto se cancele también la sesión de entrega activa y se notifique al receptor, para que el receptor no quede esperando sin información."
+verify = "Cancelar objeto con sesión activa"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "4-5-cancelar-objeto-con-sesion-activa"
+[[entry]]
+id = 6
+type = "story"
+title = "Expiración automática de sesiones y purga de canal de contacto"
+description = "quiero cerrar automáticamente las sesiones que superaron su deadline de 7 días y purgar el canal de contacto de las sesiones cerradas, para liberar los objetos bloqueados y proteger la privacidad del canal de contacto del donante. **Criterios de Aceptación:** **Dado** que existe una sesión con `status = 'active'` y `deadline_at < NOW()` **Cuando** se ejecuta el job `expire-delivery-sessions` (pg_c"
+verify = "Expiración automática de sesiones y purga de canal de contacto"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "4-6-expiracion-automatica-de-sesiones-y-purga-de-canal-de-contacto"

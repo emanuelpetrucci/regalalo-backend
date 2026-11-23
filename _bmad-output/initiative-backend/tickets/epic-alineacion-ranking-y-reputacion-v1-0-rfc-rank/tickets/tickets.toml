@@ -1,0 +1,55 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Migración `role` en `reputation_events`"
+description = "quiero registrar el rol del usuario en cada evento de reputación, para auditar deltas asimétricos de donante y receptor (MIGR-001). **Criterios de Aceptación:** **Dado** la migración MIGR-001 aplicada **Cuando** se inserta un evento tras confirmar entrega o declarar no-show"
+verify = "Migración `role` en `reputation_events`"
+covers = ["R18", "R21", "R22", "R44"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "11-1-migracion-role-reputation-events"
+[[entry]]
+id = 2
+type = "story"
+title = "Reputación asimétrica en confirm y cancel"
+description = "quiero aplicar los deltas RFC-001, RFC-002 y RFC-004 en confirmación de entrega y no-show, para incentivar la donación y equilibrar penalizaciones. **Criterios de Aceptación:** **Dado** confirmación de entrega con `total_donated` del donante = 0 antes del UPDATE **Cuando** se completa la transacción"
+verify = "Reputación asimétrica en confirm y cancel"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "11-2-reputacion-asimetrica-confirm-cancel"
+[[entry]]
+id = 3
+type = "story"
+title = "SQL ranking Tier 1 / Tier 2 y requestCount"
+description = "quiero ver candidatos según las reglas RFC-003 y que `requestCount` refleje la misma visibilidad, para elegir receptores con el nuevo control de acaparador. **Criterios de Aceptación:** **Dado** `cycles_at_limit >= 2` y `total_donated = 0` **Entonces** el usuario no aparece en `GET /items/:id/requests` ni cuenta en `requestCount` de `GET /users/me/items`"
+verify = "SQL ranking Tier 1 / Tier 2 y requestCount"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "11-3-ranking-tier-acaparador-sql"
+[[entry]]
+id = 4
+type = "story"
+title = "Tests matriz QA ranking y reputación"
+description = "quiero cobertura automatizada de los casos QA-01 a QA-14 de la spec, para evitar regresiones en ranking y reputación. **Criterios de Aceptación:** **Dado** `npm test` en el backend **Cuando** se ejecutan tests de entrega, ranking y filtros"
+verify = "Tests matriz QA ranking y reputación"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "11-4-tests-ranking-reputacion-qa"
+[[entry]]
+id = 5
+type = "story"
+title = "Sincronizar documentación ranking v1.0"
+description = "quiero que PRD, arquitectura y guías de ranking coincidan con la spec aprobada, para que ningún PR mergee sin documentación al día."
+verify = "Sincronizar documentación ranking v1.0"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "11-5-sincronizar-documentacion-ranking"

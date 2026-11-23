@@ -1,0 +1,11 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Digest horario — migración, use case, TPL-010 y endpoint cron"
+description = "quiero recibir un email horario cuando haya objetos nuevos cerca de mi zona, para descubrir oportunidades sin entrar a la app cada hora. **Criterios de Aceptación:** **Dado** un cron externo con `X-Cron-Secret` válido **Cuando** `POST /api/jobs/nearby-items-digest`"
+verify = "Digest horario — migración, use case, TPL-010 y endpoint cron"
+covers = ["R43"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "10-1-digest-horario-objetos-cercanos-email"

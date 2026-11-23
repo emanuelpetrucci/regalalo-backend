@@ -1,0 +1,33 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Solicitar un objeto"
+description = "quiero poder solicitar un objeto que me interesa, para ser considerado como candidato por el donante. **Criterios de Aceptación:** **Dado** que envío `POST /items/:id/requests` con autenticación válida y el objeto existe en estado `active` con `requests_paused = FALSE` **Cuando** el servidor procesa la petición en transacción SERIALIZABLE"
+verify = "Solicitar un objeto"
+covers = ["R12", "R15", "R16", "R17", "R18", "R27"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "3-1-solicitar-un-objeto"
+[[entry]]
+id = 2
+type = "story"
+title = "Ver candidatos rankeados para un objeto"
+description = "quiero ver la lista de candidatos que solicitaron mi objeto, ordenada por reputación, distancia y antigüedad, para elegir al receptor más adecuado con información objetiva. **Criterios de Aceptación:** **Dado** que envío `GET /items/:id/requests` siendo el donante del objeto **Cuando** el servidor procesa la petición"
+verify = "Ver candidatos rankeados para un objeto"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "3-2-ver-candidatos-rankeados-para-un-objeto"
+[[entry]]
+id = 3
+type = "story"
+title = "Incremento automático de cycles_at_limit"
+description = "quiero incrementar `cycles_at_limit` una vez por ciclo de 30 días para usuarios que agotaron su límite de solicitudes, para que el ranking pueda identificar y penalizar a usuarios acaparadores."
+verify = "Incremento automático de cycles_at_limit"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "3-3-incremento-automatico-de-cycles-at-limit"

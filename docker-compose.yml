@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: no-lo-vendo-db
+    environment:
+      POSTGRES_DB: nolv
+      POSTGRES_USER: nolv
+      POSTGRES_PASSWORD: nolv
+    ports:
+      - "5432:5432"
+    volumes:
+      - nolv_pgdata:/var/lib/postgresql/data
+      # Se ejecuta SOLO al inicializar el volumen por primera vez
+      - "./src/infrastructure/database/supabase/migrations:/docker-entrypoint-initdb.d:ro"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nolv -d nolv"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  nolv_pgdata:

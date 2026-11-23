@@ -1,0 +1,55 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Migración SQL y entidad User (DLT-003)"
+description = "quiero la migración de las siete columnas nuevas en `users` y la entidad de dominio actualizada, para que el resto de historias puedan persistir y leer los campos de identidad y control."
+verify = "Migración SQL y entidad User (DLT-003)"
+covers = ["R36", "R37", "R38", "R39", "R40"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "6-1-migracion-sql-y-entidad-user-dlt-003"
+[[entry]]
+id = 2
+type = "story"
+title = "Registro, login y middleware is_active"
+description = "quiero registrarme e iniciar sesión con nombre y apellido, y que cuentas desactivadas no autentiquen, para cumplir el contrato DLT-003 de auth. **Criterios de Aceptación:** **Dado** `POST /auth/register` con `firstName`, `lastName`, email, password, postalCode y reCAPTCHA válidos **Cuando** el registro es exitoso"
+verify = "Registro, login y middleware is_active"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "6-2-registro-login-y-middleware-is-active"
+[[entry]]
+id = 3
+type = "story"
+title = "DTOs de perfil privado y público"
+description = "quiero ver perfiles con nombre, avatar y campos de cuenta según visibilidad definida, para alinear GET /users/me y GET /users/:id con DLT-003. **Criterios de Aceptación:** **Dado** `GET /users/me` autenticado **Cuando** el servidor responde"
+verify = "DTOs de perfil privado y público"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "6-3-dtos-perfil-privado-y-publico"
+[[entry]]
+id = 4
+type = "story"
+title = "PATCH /users/me — actualización de perfil"
+description = "quiero actualizar parcialmente mi perfil, para cambiar nombre, avatar, teléfono, código postal o idioma preferido. **Criterios de Aceptación:** **Dado** `PATCH /users/me` con campos opcionales válidos **Cuando** la operación es exitosa"
+verify = "PATCH /users/me — actualización de perfil"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "6-4-patch-users-me-actualizacion-perfil"
+[[entry]]
+id = 5
+type = "story"
+title = "Emails con saludo personalizado firstName"
+description = "quiero emails que me saluden por mi nombre, para mejorar la experiencia de comunicación. **Criterios de Aceptación:** **Dado** cualquier envío TPL-001 a TPL-008 **Cuando** el Use Case invoca `IMailService.send`"
+verify = "Emails con saludo personalizado firstName"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "6-5-emails-saludo-personalizado-firstname"

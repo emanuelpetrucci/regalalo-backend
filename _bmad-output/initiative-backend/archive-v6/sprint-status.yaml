@@ -1,0 +1,178 @@
+# generated: 2026-05-04
+# last_updated: 2026-06-15
+# project: backend
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: "2026-05-04"
+last_updated: "2026-06-17" # added location_name to users and items (geocoding + migration 023)
+project: backend
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  # ─── Épica 1: Autenticación y Cuenta de Usuario ───
+  epic-1: done
+  1-1-inicializacion-del-proyecto-e-infraestructura-base: done
+  1-2-registro-de-usuario: done
+  1-3-login-de-usuario: done
+  1-4-middleware-de-autenticacion-con-validacion-de-jwt-version: done
+  1-5-recuperacion-y-reset-de-contrasena: done
+  epic-1-retrospective: done
+
+  # ─── Épica 2: Publicación y Gestión de Objetos ───
+  epic-2: done
+  2-1-publicar-objeto-con-imagenes: done
+  2-2-listar-objetos-disponibles-en-radio-geografico: done
+  2-3-ver-detalle-de-objeto: done
+  2-4-cancelar-objeto-sin-sesion-activa: done
+  2-5-pausar-y-reanudar-solicitudes-de-un-objeto: done
+  2-6-degradacion-automatica-de-objetos-inactivos: done
+  2-7-purga-automatica-de-imagenes-y-cola-de-borrado-en-storage: done
+  epic-2-retrospective: done
+
+  # ─── Épica 3: Solicitudes y Ranking de Candidatos ───
+  epic-3: done
+  3-1-solicitar-un-objeto: done
+  3-2-ver-candidatos-rankeados-para-un-objeto: done
+  3-3-incremento-automatico-de-cycles-at-limit: done
+  epic-3-retrospective: done
+
+  # ─── Épica 4: Selección de Receptor y Sesión de Entrega ───
+  epic-4: done
+  4-1-seleccionar-receptor-para-un-objeto: done
+  4-2-ver-detalle-de-sesion-de-entrega: done
+  4-3-confirmar-entrega-completada: done
+  4-4-cancelar-sesion-de-entrega-y-declarar-no-show: done
+  4-5-cancelar-objeto-con-sesion-activa: done
+  4-6-expiracion-automatica-de-sesiones-y-purga-de-canal-de-contacto: done
+  epic-4-retrospective: done
+
+  # ─── Épica 5: Perfil y Actividad del Usuario ───
+  epic-5: done
+  5-1-ver-perfil-privado-del-usuario-autenticado: done
+  5-2-ver-historial-de-reputacion: done
+  5-3-ver-sesiones-de-entrega-propias: done
+  5-4-ver-objetos-publicados-propios: done
+  5-5-ver-solicitudes-realizadas-propias: done
+  5-6-ver-perfil-publico-de-un-usuario: done
+  epic-5-retrospective: done
+
+  # ─── Épica 6: Ampliación modelo de usuario (DLT-003) ───
+  epic-6: done
+  6-1-migracion-sql-y-entidad-user-dlt-003: done
+  6-2-registro-login-y-middleware-is-active: done
+  6-3-dtos-perfil-privado-y-publico: done
+  6-4-patch-users-me-actualizacion-perfil: done
+  6-5-emails-saludo-personalizado-firstname: done
+  epic-6-retrospective: done
+
+  # ─── Épica 7: Analítica e instrumentación (DLT-004) ───
+  epic-7: done
+  7-1-migracion-sql-y-dominio-items-dlt-004: done
+  7-2-loggers-y-analytics-service: done
+  7-3-api-publicar-item-category-weight-range: done
+  7-4-instrumentacion-autenticacion-ae-001-ae-002: done
+  7-5-instrumentacion-objetos-y-solicitudes: done
+  7-6-instrumentacion-entrega-y-reputacion: done
+  7-7-persistencia-eventos-analytics-postgres: done
+  epic-7-retrospective: done
+
+  # ─── Épica 8: Verificación de email ───
+  epic-8: done
+  8-1-migracion-sql-verificacion-email: done
+  8-2-registro-token-y-email-tpl-009: done
+  8-3-middleware-email-verified: done
+  8-4-get-auth-verify-email: done
+  8-5-post-auth-resend-verification: done
+  8-6-plantilla-tpl-009-y-email-flow: done
+  epic-8-retrospective: optional
+
+  # ─── Épica 9: Emails transaccionales con marca (Correct Course 2026-05-26) ───
+  epic-9: done
+  9-1-layout-shell-y-tokens-email: done
+  9-2-tier-1-tpl-009-002-008: done
+  9-3-tier-2-tpl-003-004-005-006: done
+  9-4-tier-3-tpl-007-y-catalogo-001: done
+  9-5-limpieza-no-unstyled-email: done
+  epic-9-retrospective: optional
+
+  # ─── Épica 10: Digest de proximidad (Correct Course 2026-05-29) ───
+  epic-10: done
+  10-1-digest-horario-objetos-cercanos-email: done
+  epic-10-retrospective: optional
+
+  # ─── Épica 11: Ranking y reputación v1.0 RFC-RANK (Correct Course 2026-05-29) ───
+  epic-11: done
+  11-1-migracion-role-reputation-events: done
+  11-2-reputacion-asimetrica-confirm-cancel: done
+  11-3-ranking-tier-acaparador-sql: done
+  11-4-tests-ranking-reputacion-qa: done
+  11-5-sincronizar-documentacion-ranking: done
+  epic-11-retrospective: optional
+
+  # ─── Épica 12: Canal de contacto del candidato (Correct Course 2026-05-31) ───
+  epic-12: done
+  12-1-schema-y-jobs-purga-canal-candidato: done
+  12-2-api-postulacion-seleccion-sesion-candidato: done
+  12-3-sincronizar-documentacion-canal-candidato: done
+  epic-12-retrospective: optional
+
+  # ─── Épica 13: Panel Administrativo Backend (PRD-ADM-BE-01) ───
+  # Nota: 13-6 implementa métricas SIN bloque 'reports' (se añade en 14-7 tras migración 14-1).
+  # Historia 13-7 eliminada — módulo de reportes implementado en Épica 14 (PRD-REP-BE-01).
+  epic-13: in-progress
+  13-1-modelo-de-datos-panel-administrativo: done
+  13-2-autenticacion-de-administrador: done
+  13-3-gestion-de-usuarios-por-el-administrador: done
+  13-4-gestion-de-objetos-por-el-administrador: done
+  13-5-gestion-de-sesiones-de-entrega-por-el-administrador: done
+  13-6-metricas-operativas-y-estado-del-sistema: done
+  epic-13-retrospective: optional
+
+  # ─── Épica 14: Sistema de Reportes (PRD-REP-BE-01) ───
+  epic-14: in-progress
+  14-1-migracion-sql-tabla-reports: done
+  14-2-dominio-y-repositorio-de-reportes: done
+  14-3-endpoint-publico-post-api-reports: done
+  14-4-templates-email-modulo-reportes: done
+  14-5-cola-moderacion-admin-get-endpoints: done
+  14-6-resolucion-reportes-admin-post-endpoint: done
+  14-7-extension-metricas-anonimizacion-analitica: done
+  epic-14-retrospective: optional
+
+  # ─── Épica 15: Descubrimiento Público y SEO (Correct Course 2026-06-15) ───
+  epic-15: in-progress
+  15-1-infraestructura-seo-y-endpoints-publicos: done
+  epic-15-retrospective: optional

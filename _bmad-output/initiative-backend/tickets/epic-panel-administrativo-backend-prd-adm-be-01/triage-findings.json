@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "source": "blind+edge",
+    "title": "TOCTOU race condition: suspend/reactivate/reset-noshows/force-verification pueden mentir 200",
+    "detail": "Los use cases leen el usuario con findById(), verifican estado, luego ejecutan el UPDATE. Entre la lectura y la escritura, otro admin puede cambiar el estado. Los SQL carecen de WHERE guard (e.g. `WHERE is_active = TRUE`) y no verifican rowCount. En concurrencia, dos admins pueden recibir 200 cuando el segundo debió recibir 409. Afecta: adminSuspendUseCase, adminReactivateUseCase, adminResetNoShowsUseCase, adminForceVerificationUseCase.",
+    "location": "src/application/use-cases/admin/users/admin-suspend-user.use-case.ts:18-24, src/application/use-cases/admin/users/admin-reactivate-user.use-case.ts:18-24, src/application/use-cases/admin/users/admin-reset-no-shows.use-case.ts:18-20, src/application/use-cases/admin/users/admin-force-verification.use-case.ts:25-33, src/infrastructure/database/supabase/user.repository.ts (adminSuspend, adminReactivate, adminResetNoShows, adminForceVerification)",
+    "classification": "patch"
+  },
+  {
+    "id": 2,
+    "source": "blind+edge",
+    "title": "Integer overflow en reputation_score sin cota superior en adminCorrectReputation",
+    "detail": "delta puede ser cualquier entero no-zero (INTEGER range ±2.1B). Un delta muy grande contra un usuario con score alto causa overflow PostgreSQL → error 500. El validador solo exige `v !== 0` sin cota. Reputación negativa no está prohibida por spec pero overflow es un bug definitivo.",
+    "location": "src/application/use-cases/admin/users/admin-correct-reputation.use-case.ts:24, src/interfaces/validators/admin-correct-reputation.validator.ts:5-8, src/infrastructure/database/supabase/user.repository.ts:810-827",
+    "classification": "patch"
+  },
+  {
+    "id": 3,
+    "source": "blind+edge",
+    "title": "Admin puede suspenderse a sí mismo sin restricción",
+    "detail": "El use case no compara adminUserId con userId. Un admin puede POST /users/:id/suspend con su propio ID, incrementando jwt_version y bloqueándose sin posibilidad de recuperación (ningún otro admin puede restaurarlo porque el admin suspendido ya no puede autenticarse).",
+    "location": "src/application/use-cases/admin/users/admin-suspend-user.use-case.ts:13-17",
+    "classification": "decision_needed"
+  },
+  {
+    "id": 4,
+    "source": "blind",
+    "title": "Transform de emailVerified solo acepta 'true' literal, 'TRUE'/'1'/'yes' producen false silencioso",
+    "detail": "adminListUsersQuerySchema transforma emailVerified con `return val === 'true'`. Cualquier variante como 'TRUE', 'True', '1', 'yes' retorna false (filtro por no verificados). Debería ser case-insensitive o usar z.enum(['true', 'false']).",
+    "location": "src/interfaces/validators/admin-list-users.validator.ts:7-13",
+    "classification": "patch"
+  },
+  {
+    "id": 5,
+    "source": "blind",
+    "title": "Search sin cota de longitud máxima en validator",
+    "detail": "search es `z.string().optional()` sin `.max()`. Un atacante puede enviar megabytes en search, causando ILIKE costoso en PostgreSQL.",
+    "location": "src/interfaces/validators/admin-list-users.validator.ts:5",
+    "classification": "patch"
+  },
+  {
+    "id": 6,
+    "source": "edge",
+    "title": "adminUuidParam retorna error genérico sin detalles, inconsistente con otros validators",
+    "detail": "Retorna solo `{ message: 'Invalid request' }` sin array `errors`. Los demás validators retornan `{ message: '...', errors: result.error.issues }`.",
+    "location": "src/interfaces/validators/admin-uuid-param.validator.ts:11",
+    "classification": "patch"
+  },
+  {
+    "id": 7,
+    "source": "edge",
+    "title": "Search con whitespace-only pasa validación y produce ILIKE que no matchea nada",
+    "detail": "`?search=   ` pasa `z.string().optional()` sin trim y genera `ILIKE '%   %'` → cero resultados sin error. El usuario espera 'sin filtro' pero obtiene lista vacía.",
+    "location": "src/interfaces/validators/admin-list-users.validator.ts:5, src/infrastructure/database/supabase/user.repository.ts:555-561",
+    "classification": "patch"
+  },
+  {
+    "id": 8,
+    "source": "edge",
+    "title": "Empty ipAddress cuando req.ip es undefined",
+    "detail": "El controller usa `req.ip ?? ''`. Sin `app.set('trust proxy', ...)`, detrás de proxy inverso req.ip es undefined → IP vacía en audit log.",
+    "location": "src/interfaces/http/controllers/admin-users.controller.ts:47,60,73,88,101",
+    "classification": "patch"
+  },
+  {
+    "id": 9,
+    "source": "edge",
+    "title": "adminCorrectReputation crash si usuario se elimina entre findById y UPDATE",
+    "detail": "Si el usuario se elimina entre la verificación (findById → existe) y la transacción (UPDATE con RETURNING), result.rows[0] es undefined → TypeError → 500.",
+    "location": "src/infrastructure/database/supabase/user.repository.ts:821-827, src/application/use-cases/admin/users/admin-correct-reputation.use-case.ts:26-29",
+    "classification": "patch"
+  },
+  {
+    "id": 10,
+    "source": "blind",
+    "title": "Fire-and-forget email retorna 200 antes de confirmar envío",
+    "detail": "adminForceVerificationUseCase llama mailService.send().catch() sin await. Si Resend falla, el admin ve 200 'Email enviado' pero nunca llegó. Consistente con patrón fire-and-forget del proyecto (emitEvent).",
+    "location": "src/application/use-cases/admin/users/admin-force-verification.use-case.ts:36-47",
+    "classification": "defer"
+  },
+  {
+    "id": 11,
+    "source": "blind",
+    "title": "Audit log fuera de transacción DB — acción aplicada sin trazabilidad si falla audit log",
+    "detail": "adminSuspend, adminReactivate, adminCorrectReputation ejecutan la mutación DB dentro de transacción, luego escriben audit log FUERA. Si el audit log falla (network/DB), la acción ya está aplicada sin trazabilidad. Es el patrón existente del proyecto.",
+    "location": "src/application/use-cases/admin/users/admin-suspend-user.use-case.ts:26-33, admin-reactivate:26-32, admin-correct-reputation:31-42",
+    "classification": "defer"
+  },
+  {
+    "id": 12,
+    "source": "blind",
+    "title": "N+1 query en adminFindById — dos queries separadas para user + reputation_events",
+    "detail": "Primero SELECT users con subqueries, luego SELECT reputation_events separado. Podría ser un solo query con LATERAL JOIN. No es bug, es optimización.",
+    "location": "src/infrastructure/database/supabase/user.repository.ts:adminFindById",
+    "classification": "defer"
+  },
+  {
+    "id": 13,
+    "source": "edge",
+    "title": "buildTestApp().deps.userRepo crea app Express innecesaria en tests",
+    "detail": "Varios tests usan `...buildTestApp().deps.userRepo` para esparcir mocks, creando app Express con middleware stack real. No afecta producción pero desperdicia recursos en CI.",
+    "location": "tests/admin-users.test.ts:271-274, 314-316 (19 usos similares)",
+    "classification": "defer"
+  },
+  {
+    "id": 14,
+    "source": "blind",
+    "title": "isPassive no marca usuarios con total_donated=0 AND total_received=0",
+    "detail": "Usuarios sin actividad no son marcados como passive (requiere total_received > 0). Definición de negocio del PRD, no cambiada aquí.",
+    "location": "src/infrastructure/database/supabase/user.repository.ts (adminFindAll SQL isPassive)",
+    "classification": "dismiss"
+  },
+  {
+    "id": 15,
+    "source": "blind",
+    "title": "Reason aceptado en request pero no persistido en reputation_events",
+    "detail": "reason está en AdminCorrectReputationRequest y en audit log payloadSnapshot, pero no en la tabla reputation_events. La AC6 no requiere almacenarlo allí. El audit log lo captura.",
+    "location": "src/application/dtos/admin/admin-action.dto.ts, src/infrastructure/database/supabase/user.repository.ts (adminCorrectReputation INSERT)",
+    "classification": "dismiss"
+  },
+  {
+    "id": 16,
+    "source": "blind",
+    "title": "Non-null assertion req.adminUser!.id en controller",
+    "detail": "Patrón estándar TypeScript en el proyecto. El middleware requireAdminAuth se ejecuta antes que el controller, garantizando req.adminUser existe.",
+    "location": "src/interfaces/http/controllers/admin-users.controller.ts:45,58,71,86,99",
+    "classification": "dismiss"
+  },
+  {
+    "id": 17,
+    "source": "blind",
+    "title": "Umbrales de hoarder hardcodeados (cycles>=3, received>5*donated)",
+    "detail": "Números mágicos en SQL sin constante/config. Definición de negocio del PRD.",
+    "location": "src/infrastructure/database/supabase/user.repository.ts (adminFindAll SQL isHoarder)",
+    "classification": "dismiss"
+  }
+]

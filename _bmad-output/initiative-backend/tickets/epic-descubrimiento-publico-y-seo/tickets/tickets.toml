@@ -1,0 +1,11 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Infraestructura SEO y Endpoints Públicos"
+description = "quiero ver el feed de objetos y sus detalles sin estar autenticado, para descubrir el catálogo de la plataforma y que sea indexable por Google. **Criterios de Aceptación:** **Dado** una petición a `GET /api/items` sin token JWT **Cuando** se procesa"
+verify = "Infraestructura SEO y Endpoints Públicos"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "15-1-infraestructura-seo-y-endpoints-publicos"

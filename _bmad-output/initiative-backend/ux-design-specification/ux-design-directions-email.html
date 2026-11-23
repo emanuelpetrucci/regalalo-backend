@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TPL-010 — Direcciones de diseño (digest email)</title>
+  <style>
+    :root {
+      --primary: #3A7358;
+      --bg: #F4F5F6;
+      --surface: #FFFFFF;
+      --text: #14171A;
+      --muted: #7C8692;
+      --border: #D5D9DE;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 24px;
+      line-height: 1.5;
+    }
+    h1 { font-family: Georgia, serif; font-size: 1.75rem; margin: 0 0 8px; }
+    .intro { max-width: 720px; margin-bottom: 32px; color: #606A76; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+    .card-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card-wrap.chosen { border: 2px solid var(--primary); box-shadow: 0 0 0 3px rgba(58, 115, 88, 0.15); }
+    .label {
+      padding: 12px 16px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      background: #F0F5F2;
+    }
+    .label.chosen::after { content: ' ✓ Recomendada'; color: var(--primary); }
+    .email-frame {
+      background: var(--bg);
+      padding: 16px;
+    }
+    .email-inner {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .email-header {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-family: Georgia, serif;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .email-body { padding: 24px 28px; font-size: 15px; color: #606A76; }
+    .email-body h2 {
+      font-family: Georgia, serif;
+      color: var(--text);
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
+    .item-row {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .item-row:last-child { border-bottom: none; }
+    .thumb {
+      width: 64px;
+      height: 64px;
+      border-radius: 4px;
+      background: linear-gradient(135deg, #DCE9E2, #B5D0C2);
+      flex-shrink: 0;
+    }
+    .item-title { font-weight: 600; color: var(--text); font-size: 15px; }
+    .item-meta { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .cta {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-weight: 600;
+      margin-top: 16px;
+    }
+    .more { font-size: 14px; color: var(--muted); margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <h1>TPL-010 — Digest horario</h1>
+  <p class="intro">
+    Comparativa de direcciones para el email EVT-015. Misma marca (eucalyptus #3A7358).
+    Abrir en navegador y elegir variante antes de implementar en <code>tpl-010-nearby-items-digest.ts</code>.
+  </p>
+
+  <div class="grid">
+    <div class="card-wrap">
+      <div class="label">A — Actual (implementada)</div>
+      <div class="email-frame">
+        <div class="email-inner">
+          <div class="email-header">Regálalo</div>
+          <div class="email-body">
+            <h2>Nuevos objetos disponibles cerca de ti</h2>
+            <p>Hay 2 objetos nuevos disponibles cerca tuyo en la última hora…</p>
+            <div class="item-row">
+              <div class="thumb" aria-hidden="true"></div>
+              <div>
+                <div class="item-title">Bicicleta</div>
+                <div class="item-meta">A ~3 km de vos</div>
+              </div>
+            </div>
+            <div class="item-row">
+              <div class="thumb" aria-hidden="true"></div>
+              <div>
+                <div class="item-title">Mesa de luz</div>
+                <div class="item-meta">A ~5 km de vos</div>
+              </div>
+            </div>
+            <a class="cta" href="#">Explorar objetos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-wrap">
+      <div class="label">B — Solo texto</div>
+      <div class="email-frame">
+        <div class="email-inner">
+          <div class="email-header">Regálalo</div>
+          <div class="email-body">
+            <h2>Nuevos objetos disponibles cerca tuyo</h2>
+            <p>Hay 2 objetos nuevos disponibles cerca tuyo en la última hora…</p>
+            <div class="item-row">
+              <div>
+                <div class="item-title">Bicicleta</div>
+                <div class="item-meta">Buen estado · ~3 km</div>
+              </div>
+            </div>
+            <div class="item-row">
+              <div>
+                <div class="item-title">Mesa de luz</div>
+                <div class="item-meta">Estado regular · ~5 km</div>
+              </div>
+            </div>
+            <a class="cta" href="#">Explorar objetos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-wrap chosen">
+      <div class="label chosen">C — Rica recomendada</div>
+      <div class="email-frame">
+        <div class="email-inner">
+          <div class="email-header">Regálalo</div>
+          <div class="email-body">
+            <h2>Nuevos objetos disponibles cerca tuyo</h2>
+            <p>Hay 2 objetos nuevos disponibles cerca tuyo en la última hora…</p>
+            <div class="item-row">
+              <div class="thumb" title="Bicicleta"></div>
+              <div>
+                <div class="item-title">Bicicleta</div>
+                <div class="item-meta">Buen estado · ~3 km de vos</div>
+              </div>
+            </div>
+            <div class="item-row">
+              <div class="thumb" title="Mesa de luz"></div>
+              <div>
+                <div class="item-title">Mesa de luz</div>
+                <div class="item-meta">Estado regular · ~5 km de vos</div>
+              </div>
+            </div>
+            <a class="cta" href="#">Explorar objetos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

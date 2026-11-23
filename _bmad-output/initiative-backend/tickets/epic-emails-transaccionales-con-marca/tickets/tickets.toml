@@ -1,0 +1,55 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Layout shell y tokens de diseño"
+description = "quiero un layout HTML compartido y tokens sincronizados con `colors_and_type.css`, para renderizar emails con marca de forma consistente. **Criterios de Aceptación:** **Dado** `src/infrastructure/email/tokens/email-design-tokens.ts` **Cuando** se revisa"
+verify = "Layout shell y tokens de diseño"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "9-1-layout-shell-y-tokens-email"
+[[entry]]
+id = 2
+type = "story"
+title = "Tier 1 — TPL-009, TPL-002, TPL-008"
+description = "quiero que los emails de verificación y contraseña se vean como la app, para confiar en los enlaces que recibo. **Criterios de Aceptación:** **Dado** registro o reenvío de verificación **Cuando** se envía TPL-009"
+verify = "Tier 1 — TPL-009, TPL-002, TPL-008"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "9-2-tier-1-tpl-009-002-008"
+[[entry]]
+id = 3
+type = "story"
+title = "Tier 2 — TPL-003, TPL-004, TPL-005, TPL-006"
+description = "quiero notificaciones de flujo (solicitud, selección, expiración, cancelación) con la misma identidad visual. **Criterios de Aceptación:** **Dado** cada evento EVT-003, EVT-004, EVT-005, EVT-006 **Cuando** se dispara el email correspondiente **Entonces** el HTML usa `renderEmailLayout()` y conserva variables existentes"
+verify = "Tier 2 — TPL-003, TPL-004, TPL-005, TPL-006"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "9-3-tier-2-tpl-003-004-005-006"
+[[entry]]
+id = 4
+type = "story"
+title = "Tier 3 — TPL-007 y catálogo TPL-001"
+description = "quiero completar la migración visual y dejar TPL-001 en catálogo sin trigger en registro. **Criterios de Aceptación:** **Dado** EVT-012 / TPL-007 **Cuando** se envía degradación **Entonces** usa layout con marca"
+verify = "Tier 3 — TPL-007 y catálogo TPL-001"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "9-4-tier-3-tpl-007-y-catalogo-001"
+[[entry]]
+id = 5
+type = "story"
+title = "Limpieza — no unstyled email in prod"
+description = "quiero eliminar HTML inline legacy y validar cobertura, para cumplir criterio de go-live. **Criterios de Aceptación:** **Dado** `resend.provider.ts` **Cuando** se revisa"
+verify = "Limpieza — no unstyled email in prod"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "9-5-limpieza-no-unstyled-email"

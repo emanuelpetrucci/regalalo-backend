@@ -1,0 +1,77 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Migración SQL — tabla `reports`"
+description = "quiero la estructura de base de datos del módulo de reportes, para que el resto de historias de la épica pueda apoyarse en un schema estable."
+verify = "Migración SQL — tabla `reports`"
+covers = ["R53", "R57", "R58", "R59", "R60", "R61", "R62"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "14-1-migracion-sql-tabla-reports"
+[[entry]]
+id = 2
+type = "story"
+title = "Dominio y repositorio de reportes"
+description = "quiero las capas de dominio e infraestructura del módulo de reportes, para que los use cases puedan persistir y consultar reportes sin conocer los detalles de Supabase."
+verify = "Dominio y repositorio de reportes"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "14-2-dominio-y-repositorio-de-reportes"
+[[entry]]
+id = 3
+type = "story"
+title = "Endpoint público POST /api/reports"
+description = "quiero poder reportar un objeto o un perfil de usuario, para que el equipo de moderación pueda revisar contenido inapropiado."
+verify = "Endpoint público POST /api/reports"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "14-3-endpoint-publico-post-api-reports"
+[[entry]]
+id = 4
+type = "story"
+title = "Templates de email del módulo de reportes"
+description = "quiero los cuatro templates de email implementados en `ResendMailProvider`, para que los use cases de reportes puedan notificar correctamente a todas las partes."
+verify = "Templates de email del módulo de reportes"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "14-4-templates-email-modulo-reportes"
+[[entry]]
+id = 5
+type = "story"
+title = "Cola de moderación admin (GET endpoints)"
+description = "quiero ver el listado paginado de reportes y el detalle de cada uno, para revisar la cola de moderación y obtener el contexto necesario para tomar decisiones. **Criterios de Aceptación:** **Dado** que hago `GET /api/admin/reports` con `status=pending` **Entonces** responde `200` con lista FIFO (`created_at ASC`), paginada, con `pendingCountForEntity` via JOIN a `reports_summary_by_entity`"
+verify = "Cola de moderación admin (GET endpoints)"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "14-5-cola-moderacion-admin-get-endpoints"
+[[entry]]
+id = 6
+type = "story"
+title = "Resolución de reportes admin (POST endpoint)"
+description = "quiero cerrar un reporte con una acción de resolución y nota obligatoria, para dejar trazabilidad de cada decisión de moderación y ejecutar las consecuencias correspondientes. **Criterios de Aceptación:** **Dado** que envío `POST /api/admin/reports/:id/resolve` con `action='archive'` y `resolutionNote` no vacío **Entonces** el reporte pasa a `status='archived'`; entrada en `admin_audit_log` con `a"
+verify = "Resolución de reportes admin (POST endpoint)"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "14-6-resolucion-reportes-admin-post-endpoint"
+[[entry]]
+id = 7
+type = "story"
+title = "Extensión de métricas, job de anonimización y analítica"
+description = "quiero completar el módulo de reportes con la extensión del dashboard de métricas, el job mensual de anonimización RGPD y la instrumentación analítica, para que el operador tenga visibilidad sobre el estado de la cola y los datos cumplan con la retención."
+verify = "Extensión de métricas, job de anonimización y analítica"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "14-7-extension-metricas-anonimizacion-analitica"

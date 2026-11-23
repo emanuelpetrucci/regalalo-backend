@@ -1,0 +1,95 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`email-tpl-003 — receptor seleccionado > 9.3 — snapshot de TPL-003 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">¡Buenas noticias! Fuiste seleccionado/a para recibir un objeto.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, Carlos
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">¡Fuiste seleccionado/a como receptor!</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">¡Fuiste seleccionado/a como receptor para «Mesa de madera» (buen estado)!</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">La entrega debe coordinarse antes del 2026-02-01 12:00. Entrá a la app para ver el canal de contacto del donante.</p>
+
+              <!-- CTA primario -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td align="center" style="padding: 24px 0 16px 0;">
+      <a href="https://app.test.example.com" target="_blank"
+        style="display: inline-block; background-color: #3A7358; color: #FFFFFF; font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; line-height: 44px; min-height: 44px; padding: 0 32px; text-decoration: none; border-radius: 6px; mso-padding-alt: 0;">
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+        Ver en la app
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+      </a>
+    </td>
+  </tr>
+</table>
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;

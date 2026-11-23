@@ -1,0 +1,77 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Publicar objeto con imágenes"
+description = "quiero poder publicar un objeto con título, descripción, condición, ubicación y hasta 5 imágenes, para que los receptores de mi zona puedan solicitarlo."
+verify = "Publicar objeto con imágenes"
+covers = ["R8", "R9", "R10", "R11", "R13", "R14", "R24", "R25", "R34"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "2-1-publicar-objeto-con-imagenes"
+[[entry]]
+id = 2
+type = "story"
+title = "Listar objetos disponibles en radio geográfico"
+description = "quiero ver una lista paginada de objetos activos en un radio de 50 km de mi ubicación, para encontrar objetos disponibles cerca de mí. **Criterios de Aceptación:** **Dado** que envío `GET /items` con autenticación válida **Cuando** el servidor procesa la petición"
+verify = "Listar objetos disponibles en radio geográfico"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "2-2-listar-objetos-disponibles-en-radio-geografico"
+[[entry]]
+id = 3
+type = "story"
+title = "Ver detalle de objeto"
+description = "quiero ver el detalle completo de un objeto específico, para decidir si quiero solicitarlo o conocer su estado actual. **Criterios de Aceptación:** **Dado** que envío `GET /items/:id` con un UUID válido y el objeto existe **Cuando** el servidor procesa la petición"
+verify = "Ver detalle de objeto"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "2-3-ver-detalle-de-objeto"
+[[entry]]
+id = 4
+type = "story"
+title = "Cancelar objeto (sin sesión activa)"
+description = "quiero poder cancelar un objeto que publiqué, para retirarlo del sistema cuando ya no esté disponible. **Criterios de Aceptación:** **Dado** que envío `DELETE /items/:id` siendo el donante del objeto y el objeto no tiene sesión activa **Cuando** el servidor procesa la petición"
+verify = "Cancelar objeto (sin sesión activa)"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "2-4-cancelar-objeto-sin-sesion-activa"
+[[entry]]
+id = 5
+type = "story"
+title = "Pausar y reanudar solicitudes de un objeto"
+description = "quiero poder pausar temporalmente las solicitudes de mi objeto, para controlar cuándo acepto nuevas solicitudes. **Criterios de Aceptación:** **Dado** que envío `PATCH /items/:id/pause` con `{ \"paused\": true }` siendo el donante y el objeto en estado `active` **Cuando** el servidor procesa la petición"
+verify = "Pausar y reanudar solicitudes de un objeto"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "2-5-pausar-y-reanudar-solicitudes-de-un-objeto"
+[[entry]]
+id = 6
+type = "story"
+title = "Degradación automática de objetos inactivos"
+description = "quiero degradar automáticamente los objetos que llevan 7 días sin selección de receptor, para que aparezcan al final del feed y el donante sepa que su objeto tiene baja actividad."
+verify = "Degradación automática de objetos inactivos"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "2-6-degradacion-automatica-de-objetos-inactivos"
+[[entry]]
+id = 7
+type = "story"
+title = "Purga automática de imágenes y cola de borrado en Storage"
+description = "quiero purgar las imágenes de objetos finalizados y garantizar el borrado físico en Supabase Storage incluso ante caídas del servidor, para no acumular archivos huérfanos. **Criterios de Aceptación:** **Dado** que existen objetos con `status IN ('completed','cancelled')` y `completed_at < NOW() - 30 días` con registros en `item_images` **Cuando** se ejecuta el job `purge-item-images` (pg_cron, 03:"
+verify = "Purga automática de imágenes y cola de borrado en Storage"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "2-7-purga-automatica-de-imagenes-y-cola-de-borrado-en-storage"

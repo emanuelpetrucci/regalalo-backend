@@ -1,0 +1,66 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Migración SQL y entidad User"
+description = "quiero columnas e índice para tokens de verificación en `users`, para soportar el flujo EVT-014 sin consultas full-table. **Criterios de Aceptación:** **Dado** la migración aplicada **Cuando** se inspecciona el esquema"
+verify = "Migración SQL y entidad User"
+covers = ["R35"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "8-1-migracion-sql-verificacion-email"
+[[entry]]
+id = 2
+type = "story"
+title = "Registro con token y email EVT-014"
+description = "quiero recibir un email con enlace de verificación, para confirmar que soy dueño del correo antes de usar la plataforma. **Criterios de Aceptación:** **Dado** `POST /auth/register` exitoso **Cuando** el usuario se inserta"
+verify = "Registro con token y email EVT-014"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "8-2-registro-token-y-email-tpl-009"
+[[entry]]
+id = 3
+type = "story"
+title = "Middleware emailVerified"
+description = "quiero bloquear rutas protegidas si el email no está verificado, para impedir uso de la plataforma con cuentas no confirmadas. **Criterios de Aceptación:** **Dado** JWT válido, `jwt_version` coincidente, `is_active = TRUE` y `email_verified = FALSE` **Cuando** accedo a una ruta protegida no exenta"
+verify = "Middleware emailVerified"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "8-3-middleware-email-verified"
+[[entry]]
+id = 4
+type = "story"
+title = "GET /auth/verify-email"
+description = "quiero verificar mi email haciendo clic en el enlace del correo, para desbloquear el acceso a la plataforma. **Criterios de Aceptación:** **Dado** `GET /auth/verify-email?token=` con token válido y no expirado **Cuando** el servidor procesa la petición"
+verify = "GET /auth/verify-email"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "8-4-get-auth-verify-email"
+[[entry]]
+id = 5
+type = "story"
+title = "POST /auth/resend-verification"
+description = "quiero solicitar un nuevo enlace, para verificar si el anterior expiró o no llegó. **Criterios de Aceptación:** **Dado** JWT válido y `email_verified = FALSE` **Cuando** `verification_resend_at` superó cooldown de 30 s"
+verify = "POST /auth/resend-verification"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "8-5-post-auth-resend-verification"
+[[entry]]
+id = 6
+type = "story"
+title = "Plantilla TPL-009 y email-flow v1.2"
+description = "quiero la plantilla Resend y documentación alineadas con EVT-014, para envíos consistentes en registro y reenvío. **Criterios de Aceptación:** **Dado** `docs/email-flow-mapping.md` v1.2 **Cuando** se revisa el repo"
+verify = "Plantilla TPL-009 y email-flow v1.2"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "8-6-plantilla-tpl-009-y-email-flow"

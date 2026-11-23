@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables (secrets)
+.env
+.env.local
+.env.dev
+.env.prod
+
+# Database backups (scripts/db-backup.ts)
+.bk/
+
+# Local filesystem storage (STORAGE_DRIVER=local)
+.storage/
+.storage-test/
+.env.*.local
+.env.production
+.env.staging
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# BMAD — personal config (never committed)
+_bmad/custom/config.user.toml
+
+# BMAD — rendered skill snapshots, keyed by this machine's absolute path
+_bmad/render/
+
+# BMAD — local migration backups (do not commit)
+.v6-v7-migration-backup-*/
+.tickets-folder-migration-backup-*/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+.storage-e2e
+.codegraph/
+
+# --- Apertura pública (AGPL-3.0-or-later): entorno, configuración local y artefactos ---
+
+# Entorno y secretos
+.env.*
+!.env.example
+!.env.*.example
+# El fichero .env.e2e no debe volver a subirse; se sustituye por .env.e2e.example
+.env.e2e
+
+# Configuración local con ruta personal (no es una skill; no publicarla)
+.claude/settings.local.json
+
+# Informes y artefactos de prueba
+playwright-report/
+test-results/
+*.dump
+*.sql.gz
+
+# Claves y almacenes
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore

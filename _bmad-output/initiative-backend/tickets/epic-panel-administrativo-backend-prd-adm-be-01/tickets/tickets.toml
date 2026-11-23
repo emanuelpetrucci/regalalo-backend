@@ -1,0 +1,66 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Modelo de datos del panel administrativo"
+description = "quiero crear las tablas `admin_users`, `admin_otp_tokens` y `admin_audit_log`, añadir el campo `paused_by_admin` a `items` y ampliar el constraint de `reputation_events.type`, para que todas las historias del módulo admin tengan el esquema de base de datos necesario."
+verify = "Modelo de datos del panel administrativo"
+covers = ["R49", "R50", "R51", "R52", "R53", "R54", "R55", "R56"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "13-1-modelo-de-datos-panel-administrativo"
+[[entry]]
+id = 2
+type = "story"
+title = "Autenticación de administrador"
+description = "quiero poder autenticarme con email, contraseña y código OTP enviado por email, para acceder al panel de administración con doble factor de seguridad. **Criterios de Aceptación:** **Dado** que envío `POST /api/admin/auth/login` con credenciales correctas **Cuando** el servidor procesa la petición"
+verify = "Autenticación de administrador"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "13-2-autenticacion-de-administrador"
+[[entry]]
+id = 3
+type = "story"
+title = "Gestión de usuarios por el administrador"
+description = "quiero buscar usuarios, ver su perfil completo y ejecutar acciones operativas sobre ellos, para mantener la integridad del ecosistema. **Criterios de Aceptación:** **Dado** que envío `GET /api/admin/users` con filtros opcionales **Entonces** responde `200` con lista paginada incluyendo `isPassive` e `isHoarder` calculados; `location` nunca en respuesta"
+verify = "Gestión de usuarios por el administrador"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "13-3-gestion-de-usuarios-por-el-administrador"
+[[entry]]
+id = 4
+type = "story"
+title = "Gestión de objetos por el administrador"
+description = "quiero buscar objetos, ver su detalle completo y ejecutar acciones de cancelación o reactivación, para intervenir sobre ítems problemáticos del ecosistema. **Criterios de Aceptación:** **Dado** que envío `POST /api/admin/items/:id/cancel` sobre objeto en estado `active` o `reserved` **Entonces** el objeto pasa a `cancelled`; si había receptor seleccionado se envía TPL-005; se registra `item.cancel"
+verify = "Gestión de objetos por el administrador"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "13-4-gestion-de-objetos-por-el-administrador"
+[[entry]]
+id = 5
+type = "story"
+title = "Gestión de sesiones de entrega por el administrador"
+description = "quiero listar sesiones, ver su detalle y forzar expiración de sesiones activas atascadas, para resolver problemas operativos en el flujo de entregas. **Criterios de Aceptación:** **Dado** que envío `GET /api/admin/sessions/:id` sobre sesión con `contact_purged=FALSE` **Entonces** responde con `contactChannel` visible"
+verify = "Gestión de sesiones de entrega por el administrador"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "13-5-gestion-de-sesiones-de-entrega-por-el-administrador"
+[[entry]]
+id = 6
+type = "story"
+title = "Métricas operativas y estado del sistema"
+description = "quiero ver métricas del estado del ecosistema y el estado de los jobs periódicos, para identificar anomalías operativas sin consultar la base de datos directamente. **Criterios de Aceptación:** **Dado** que envío `GET /api/admin/metrics` **Entonces** responde `200` con `{ users: {...}, items: {...}, sessions: {...} }` según PRD §6.6"
+verify = "Métricas operativas y estado del sistema"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "13-6-metricas-operativas-y-estado-del-sistema"

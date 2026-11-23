@@ -1,0 +1,33 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Schema y jobs de purga"
+description = "quiero persistir el canal del candidato en `item_requests` y el canal copiado en `delivery_sessions`, con purga programada de ambos canales de sesión, para soportar contacto simétrico y privacidad acorde al delta aprobado. **Criterios de Aceptación:** **Dado** la migración aplicada **Cuando** inspecciono el schema"
+verify = "Schema y jobs de purga"
+covers = ["R46", "R47"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "12-1-schema-y-jobs-purga-canal-candidato"
+[[entry]]
+id = 2
+type = "story"
+title = "API postulación, selección y sesión"
+description = "quiero exigir el canal en la postulación, copiarlo al seleccionar receptor y exponerlo al donante bajo SEC-002c, para desbloquear la comunicación proactiva del donante. **Criterios de Aceptación:** **Dado** `POST /items/:id/requests` con `{ \"contactChannel\": \"string\" }` no vacío y usuario autenticado **Cuando** se crea la solicitud en transacción SERIALIZABLE"
+verify = "API postulación, selección y sesión"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "12-2-api-postulacion-seleccion-sesion-candidato"
+[[entry]]
+id = 3
+type = "story"
+title = "Sincronizar documentación"
+description = "quiero que PRD, arquitectura y épicas reflejen el canal del candidato, para que implementación y revisiones futuras usen una sola fuente de verdad."
+verify = "Sincronizar documentación"
+covers = ["R45", "R48"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "12-3-sincronizar-documentacion-canal-candidato"

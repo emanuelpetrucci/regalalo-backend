@@ -1,0 +1,1319 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-001 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Bienvenido/a a Regálalo.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, Emanuel
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">¡Bienvenido/a a Regálalo!</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Tu cuenta ya está lista.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">En Regálalo podés regalar lo que no usás y pedir objetos cerca tuyo, sin dinero de por medio. La comunidad se organiza con participación justa: quien más aporta, más fácil recibe.</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-002 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Restablecé tu contraseña y volvé a acceder.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, María
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Restablecé tu contraseña</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Recibimos una solicitud para restablecer la contraseña de tu cuenta.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Este enlace vence en 60 minutos.</p>
+
+              <!-- CTA primario -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td align="center" style="padding: 24px 0 16px 0;">
+      <a href="https://example.com/reset-password?token=xyz789" target="_blank"
+        style="display: inline-block; background-color: #3A7358; color: #FFFFFF; font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; line-height: 44px; min-height: 44px; padding: 0 32px; text-decoration: none; border-radius: 6px; mso-padding-alt: 0;">
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+        Restablecer contraseña
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+      </a>
+    </td>
+  </tr>
+</table>
+
+              <!-- Fallback link -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 14px; color: #7C8692; text-align: center; margin: 0 0 16px 0; padding: 0;">
+        O copia este enlace: <a href="https://example.com/reset-password?token=xyz789" style="color: #3A7358; text-decoration: underline; word-break: break-all;">https://example.com/reset-password?token=xyz789</a>
+      </p>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-003 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">¡Buenas noticias! Fuiste seleccionado/a para recibir un objeto.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, Carlos
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">¡Fuiste seleccionado/a como receptor!</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">¡Fuiste seleccionado/a como receptor para «Mesa de madera» (buen estado)!</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">La entrega debe coordinarse antes del 2026-02-01 12:00. Entrá a la app para ver el canal de contacto del donante.</p>
+
+              <!-- CTA primario -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td align="center" style="padding: 24px 0 16px 0;">
+      <a href="https://app.test.example.com" target="_blank"
+        style="display: inline-block; background-color: #3A7358; color: #FFFFFF; font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; line-height: 44px; min-height: 44px; padding: 0 32px; text-decoration: none; border-radius: 6px; mso-padding-alt: 0;">
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+        Ver en la app
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+      </a>
+    </td>
+  </tr>
+</table>
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-004 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">La sesión de entrega venció sin confirmación.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, María
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">La sesión de entrega expiró</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">La sesión de entrega para «Mesa de madera» venció sin que se confirmara la entrega.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">El objeto vuelve a estar disponible en el tablón para nuevas solicitudes.</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-005 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">El donante canceló el objeto. La sesión de entrega fue cerrada.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, Carlos
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">El objeto fue cancelado</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">El donante canceló el objeto «Mesa de madera».</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">La sesión de entrega fue cerrada. Si te interesan objetos similares, seguí explorando la plataforma.</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-006 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Alguien solicitó tu objeto. Entrá a la app para elegir al receptor.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, Ana
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Nueva solicitud para tu objeto</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Un usuario solicitó tu objeto «Mesa de madera». Entrá a la app para ver los candidatos y elegir al receptor.</p>
+
+              <!-- CTA primario -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td align="center" style="padding: 24px 0 16px 0;">
+      <a href="https://app.test.example.com/items/aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee" target="_blank"
+        style="display: inline-block; background-color: #3A7358; color: #FFFFFF; font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; line-height: 44px; min-height: 44px; padding: 0 32px; text-decoration: none; border-radius: 6px; mso-padding-alt: 0;">
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+        Ver candidatos
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+      </a>
+    </td>
+  </tr>
+</table>
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-007 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Tu objeto lleva tiempo publicado — aparece más abajo en el tablón.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, Lucía
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Tu objeto aparece más abajo en el tablón</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Tu objeto «Silla de oficina» lleva más de 7 días publicado sin que se elija un receptor.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Para dar visibilidad a publicaciones más recientes, aparece más abajo en el tablón.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Si querés que lo vean más personas, podés actualizar la descripción o revisar el código postal.</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-008 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Tu contraseña fue actualizada correctamente.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, María
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Contraseña restablecida</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Tu contraseña ha sido restablecida correctamente.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Si no realizaste este cambio, contactá con soporte de inmediato.</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-009 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Un click y ya podés publicar, pedir o regalar lo que no vendés.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, María
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Confirmá tu email y empezá en Regálalo</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Confirmá tu dirección de email haciendo clic en el botón.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Este enlace vence en 24 horas.</p>
+
+              <!-- CTA primario -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td align="center" style="padding: 24px 0 16px 0;">
+      <a href="https://example.com/verificar-email?token=abc123" target="_blank"
+        style="display: inline-block; background-color: #3A7358; color: #FFFFFF; font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; line-height: 44px; min-height: 44px; padding: 0 32px; text-decoration: none; border-radius: 6px; mso-padding-alt: 0;">
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+        Confirmar mi email
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+      </a>
+    </td>
+  </tr>
+</table>
+
+              <!-- Fallback link -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 14px; color: #7C8692; text-align: center; margin: 0 0 16px 0; padding: 0;">
+        O copia este enlace: <a href="https://example.com/verificar-email?token=abc123" style="color: #3A7358; text-decoration: underline; word-break: break-all;">https://example.com/verificar-email?token=abc123</a>
+      </p>
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-010 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Objetos nuevos cerca tuyo — mirá el resumen y explorá en la app.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, Ana
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Nuevos objetos disponibles cerca tuyo</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Hay 1 objeto nuevo disponible cerca tuyo en la última hora. Entrá a explorar y pedí el que te interese.</p><table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="margin: 8px 0 16px 0;">
+    <tr>
+        <td style="padding: 12px 0; border-bottom: 1px solid #D5D9DE;">
+          <table cellpadding="0" cellspacing="0" border="0" role="presentation">
+            <tr>
+              
+              <td valign="top" style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 15px; color: #14171A;">
+                <strong>Bicicleta</strong><br />
+                <span style="color: #7C8692; font-size: 13px;">Buen estado · ~3 km de vos</span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+  </table>
+
+              <!-- CTA primario -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td align="center" style="padding: 24px 0 16px 0;">
+      <a href="https://app.test.example.com/explorar" target="_blank"
+        style="display: inline-block; background-color: #3A7358; color: #FFFFFF; font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; line-height: 44px; min-height: 44px; padding: 0 32px; text-decoration: none; border-radius: 6px; mso-padding-alt: 0;">
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+        Explorar objetos
+        <!--[if mso]><i style="letter-spacing: 32px; mso-char-type: overhang;">&nbsp;</i><![endif]-->
+      </a>
+    </td>
+  </tr>
+</table>
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-011 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Confirmación de recepción de tu reporte.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, Juan
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Hemos recibido tu reporte</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Gracias por tu reporte. Hemos recibido tu aviso sobre un objeto relacionado con Contenido inadecuado.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Nuestro equipo de moderación revisará tu reporte y tomará las medidas correspondientes.</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-012 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Tu reporte ha sido revisado.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, María
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Hemos revisado tu reporte</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Gracias por confiar en Regálalo. Queremos informarte que hemos revisado tu reporte sobre otro usuario.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Hemos tomado las medidas que consideramos oportunas para mantener la comunidad segura.</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-013 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Revisamos tu actividad en la plataforma.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, Carlos
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Aviso sobre tu actividad</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Hemos revisado tu actividad en Regálalo y, tras nuestra revisión, consideramos que cierto contenido o comportamiento podría no ajustarse a las normas de la comunidad.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Te invitamos a revisar las normas de la plataforma para seguir construyendo juntos una comunidad positiva para todos.</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-ADM-001 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Tu código de acceso al panel de administración de Regálalo.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, administrador
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Código de acceso al panel</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Usá el siguiente código para acceder al panel de administración.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Tu código de acceso es: <strong style="font-size: 24px; letter-spacing: 4px;">123456</strong></p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Este código vence en 10 minutos. No lo compartas con nadie.</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;
+
+exports[`email-templates.snap — registry TPL-001…010 > 9.5 — TPL-ADM-002 pasa por renderEmailLayout (header/footer) y snapshot 1`] = `
+"<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Regálalo</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F4F5F6; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+  <!-- Preheader -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">Nuevo reporte recibido. Revisar en el panel de administración.</div>
+
+  <!-- Outer wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+    style="background-color: #F4F5F6;">
+    <tr>
+      <td align="center" style="padding: 24px 16px;">
+
+        <!-- Email container (max 600px) -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+          style="max-width: 600px; width: 100%; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #D5D9DE;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background-color: #3A7358; border-radius: 8px 8px 0 0; padding: 24px; text-align: center;">
+              <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 22px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.3px;">
+                Regálalo
+              </span>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding: 32px 40px 8px 40px;">
+
+              <!-- Saludo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; color: #606A76; margin: 0 0 16px 0; padding: 0;">
+                Hola, administrador
+              </p>
+
+              <!-- Titular -->
+              <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #14171A; margin: 0 0 16px 0; padding: 0; line-height: 1.3;">Nuevo reporte recibido</h1>
+
+              <!-- Cuerpo -->
+              <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">Se ha recibido un nuevo reporte en la plataforma.</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">&lt;strong&gt;ID del reporte:&lt;/strong&gt; aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee&lt;br /&gt;&lt;strong&gt;Enlace directo:&lt;/strong&gt; &lt;a href=&quot;https://admin.regalalo.org/reportes/aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee&quot; style=&quot;color: inherit;&quot;&gt;https://admin.regalalo.org/reportes/aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee&lt;/a&gt;</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">&lt;strong&gt;Tipo de entidad:&lt;/strong&gt; objeto&lt;br /&gt;&lt;strong&gt;Motivo:&lt;/strong&gt; Fraude o engaño</p><p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; color: #606A76; margin: 0 0 16px 0; padding: 0;">&lt;strong&gt;Contenido reportado:&lt;/strong&gt; Mesa de madera&lt;br /&gt;&lt;strong&gt;Denunciante:&lt;/strong&gt; Juan&lt;br /&gt;&lt;strong&gt;Fecha y hora:&lt;/strong&gt; 10/06/2026 10:30</p>
+
+              <!-- CTA primario -->
+              
+
+              <!-- Fallback link -->
+              
+
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 0 40px 24px 40px;">
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+  <tr>
+    <td style="padding: 24px 0 0 0; border-top: 1px solid #D5D9DE; text-align: center;">
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 13px; color: #7C8692; margin: 0 0 8px 0; padding: 0;">
+        ¿No creaste esta cuenta?
+        <a href="mailto:soporte@regalalo.org" style="color: #3A7358; text-decoration: underline;">Contactá con soporte</a>
+      </p>
+      <p style="font-family: 'DM Sans', Arial, Helvetica, sans-serif; font-size: 12px; color: #7C8692; margin: 0; padding: 0;">
+        © 2026 Regálalo. Todos los derechos reservados.
+      </p>
+    </td>
+  </tr>
+</table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>"
+`;

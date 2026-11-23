@@ -1,0 +1,77 @@
+[[entry]]
+id = 1
+type = "story"
+title = "Migración SQL y dominio items (DLT-004)"
+description = "quiero las columnas `category` y `weight_range` en `items` con constraints y entidad actualizada, para persistir dimensiones analíticas desde la publicación. **Criterios de Aceptación:** **Dado** que existe la tabla `items` sin columnas analíticas **Cuando** se aplica la migración `013-items-dlt-004.sql`"
+verify = "Migración SQL y dominio items (DLT-004)"
+covers = ["R41", "R42"]
+after = []
+hitl = false
+risk = "low"
+v6_key = "7-1-migracion-sql-y-dominio-items-dlt-004"
+[[entry]]
+id = 2
+type = "story"
+title = "Loggers y analytics.service"
+description = "quiero streams de log separados para aplicación y analítica, para filtrar eventos de negocio sin mezclarlos con errores de infraestructura. **Criterios de Aceptación:** **Dado** `src/config/loggers.ts` **Cuando** se inspecciona la configuración"
+verify = "Loggers y analytics.service"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "7-2-loggers-y-analytics-service"
+[[entry]]
+id = 3
+type = "story"
+title = "API publicar ítem — category y weightRange"
+description = "quiero indicar categoría y rango de peso al publicar, para cumplir el contrato analítico del MVP. **Criterios de Aceptación:** **Dado** `POST` publicar ítem con `category` y `weightRange` válidos **Cuando** la publicación es exitosa"
+verify = "API publicar ítem — category y weightRange"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "7-3-api-publicar-item-category-weight-range"
+[[entry]]
+id = 4
+type = "story"
+title = "Instrumentación autenticación (AE-001, AE-002)"
+description = "quiero eventos de registro y login en el stream de analítica, para medir adquisición y retención. **Criterios de Aceptación:** **Dado** registro exitoso **Cuando** termina el commit"
+verify = "Instrumentación autenticación (AE-001, AE-002)"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "7-4-instrumentacion-autenticacion-ae-001-ae-002"
+[[entry]]
+id = 5
+type = "story"
+title = "Instrumentación objetos y solicitudes"
+description = "quiero eventos en el ciclo de vida del objeto y límites de solicitud, para analizar conversión y fricción. **Criterios de Aceptación:** **Dado** solicitud de ítem exitosa **Cuando** termina el commit"
+verify = "Instrumentación objetos y solicitudes"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "7-5-instrumentacion-objetos-y-solicitudes"
+[[entry]]
+id = 6
+type = "story"
+title = "Instrumentación entrega y reputación"
+description = "quiero eventos en sesiones de entrega y cambios de reputación, para medir completitud y conducta. **Criterios de Aceptación:** **Dado** confirmación de entrega exitosa **Cuando** termina el commit"
+verify = "Instrumentación entrega y reputación"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "7-6-instrumentacion-entrega-y-reputacion"
+[[entry]]
+id = 7
+type = "story"
+title = "Persistencia de eventos en Postgres (Correct Course 2026-05-26)"
+description = "quiero que cada evento de analítica se almacene en Postgres además del log estructurado, para consultar métricas del MVP con SQL sin depender solo de Railway. **Criterios de Aceptación:** **Dado** la migración `014-analytics-events.sql` aplicada **Cuando** se inspecciona el esquema"
+verify = "Persistencia de eventos en Postgres (Correct Course 2026-05-26)"
+covers = []
+after = []
+hitl = false
+risk = "low"
+v6_key = "7-7-persistencia-eventos-analytics-postgres"
