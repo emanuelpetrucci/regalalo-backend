@@ -37,4 +37,9 @@ jobs:
         run: npm run build
 
       - name: Tests (Vitest)
-        run: npm test
+        # load-env.ts exige .env.${APP_ENV} (por defecto .env.local).
+        # El ejemplo no tiene secretos reales; Vitest ya inyecta valores de prueba
+        # y dotenv no los pisa si existen.
+        run: |
+          cp .env.local.example .env.local
+          npm test
