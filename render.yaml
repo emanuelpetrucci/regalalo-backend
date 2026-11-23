@@ -86,7 +86,7 @@ services:
     runtime: node
     region: frankfurt
     plan: starter
-    branch: master
+    branch: main
     buildCommand: npm ci --include=dev && npm run build
     startCommand: npm run start:prod
     healthCheckPath: /api/health
