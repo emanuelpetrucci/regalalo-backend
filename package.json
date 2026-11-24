@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^8.5.0",
-    "@supabase/supabase-js": "^2.105.3",
+    "@supabase/supabase-js": "^2.119.2",
     "argon2": "^0.44.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.0",
